@@ -1,0 +1,31 @@
+<br><hr size="4">
+
+
+
+<center><span >Here you are your information</span></center>
+<center>
+<table border="1">
+
+<tr>
+    <td>Assignee</td><td>BACKLOG</td><td>Selected for development</td><td>In progress</td><td>Done</td>
+</tr>
+
+
+{{#each f}}
+   
+   <tr>
+    <td>{{this.ass}}</td>
+    <td align="center"><a href="https://denyskuz.atlassian.net/issues/?filter=10003&jql=project%20%3D%20JIRA%20AND%20(%20issuetype%20%3D%20Bug%20OR%20issuetype%20%3D%20Task%20)%20AND%20status%3DBacklog&atlOrigin=eyJpIjoiNDVkM2JjYzNhNWRmNDZkMmE4MTE5Y2JjMTg5MWUxNmYiLCJwIjoiaiJ9">{{this.b}}</a></td>
+    <td align="center"><a href="https://denyskuz.atlassian.net/issues/?filter=10003&jql=project%20%3D%20JIRA%20AND%20(%20issuetype%20%3D%20Bug%20OR%20issuetype%20%3D%20Task%20)%20AND%20status%3D'Selected%20for%20development'&atlOrigin=eyJpIjoiNjlhMjVmOWY2NTc1NGRlYjhhZWFmZTJjYzRhZDRmNWYiLCJwIjoiaiJ9">{{this.dev}}</a></td>
+    <td align="center"><a href="https://denyskuz.atlassian.net/issues/?filter=10003&jql=project%20%3D%20JIRA%20AND%20(%20issuetype%20%3D%20Bug%20OR%20issuetype%20%3D%20Task%20)%20AND%20status%3D'In%20progress'&atlOrigin=eyJpIjoiOTViZmVhODRiOTk4NDNiMmJkZTdiODhkM2YyZjc3YzMiLCJwIjoiaiJ9">{{this.in}}</a></td>
+    <td align="center"><a href="https://denyskuz.atlassian.net/issues/?filter=10003&jql=project%20%3D%20JIRA%20AND%20(%20issuetype%20%3D%20Bug%20OR%20issuetype%20%3D%20Task%20)%20AND%20status%3DDONE&atlOrigin=eyJpIjoiODM4MmNhMWVhNjc0NGI3MmI4NzAyOGJlMDRmODJmY2IiLCJwIjoiaiJ9">{{this.done}}</a></td>
+
+</tr>
+   
+   
+
+{{/each}}
+
+</table>
+
+</center>

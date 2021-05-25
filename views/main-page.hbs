@@ -1,0 +1,40 @@
+<div id="main-table-panel" style="overflow-x: auto; height: inherit">
+
+
+
+ <center>  <h3 style="border: 1px solid black; margin-top: 5%;">Some information about your team 😉</h3></center> 
+
+</div>
+
+{{#if ja.length}}
+
+<center>
+   
+<form action="/filter" method="POST" style="margin-top: 3%;">
+ <label >Select issues by filter: </label> <select id="filter" name="filter">
+
+  
+   {{#each ja}}
+   
+    <option value="{{this.searchUrl}}">{{this.name}}</option>
+ 
+    {{/each}}
+ 
+</select>
+<button type="submit">Get data </button>
+</form>
+   
+   {{#else}}
+    
+           
+         <h1><label>NO DATA!!!!</label> </h1>
+    
+    {{/else}}
+
+    {{/if}}
+
+</center>
+
+
+
+

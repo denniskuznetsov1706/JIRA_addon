@@ -1,0 +1,40 @@
+{
+  "key": "test-addon",
+  "name": "Jira addon 2",
+  "description": "Jira-Jira what are you doing with me ....",
+  "enableLicensing": true,
+  "vendor": {
+    "name": "SaaSJet",
+    "url": "https://saasjet.com"
+  },
+  "baseUrl": "https://27bbfeffe8d5.ngrok.io",
+  "links": {
+    "self": "https://smth.ngrok.com/atlassian-connect.json",
+    "homepage": "https://smth.ngrok.com/atlassian-connect.json"
+  },
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed"
+  },
+  "scopes": [
+    "READ",
+    "ACT_AS_USER",
+    "WRITE"
+  ],
+  "modules": {
+    "generalPages": [
+      {
+        "key": "main-page",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "Jira turbo addon"
+        },
+        "url": "/main-page",
+        "conditions": [
+        ]
+      }
+    ]
+  }
+}
