@@ -7,7 +7,7 @@
     "name": "SaaSJet",
     "url": "https://saasjet.com"
   },
-  "baseUrl": "https://27bbfeffe8d5.ngrok.io",
+  "baseUrl": "https://jiradennis.herokuapp.com",
   "links": {
     "self": "https://smth.ngrok.com/atlassian-connect.json",
     "homepage": "https://smth.ngrok.com/atlassian-connect.json"
